@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .wrapper {
+      width: 80%;
+      /* border: 1px solid #000; */
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 50px auto;
+    }
+    .Menu {
+      background-color: rgb(92, 90, 90);
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .name {
+      font-size: 18px;
+      color: gold;
+      font-family: "Times New Roman", Times, serif;
+      margin: 10px 100px;
+    }
+    .nav {
+      margin-top: 10px;
+      margin-left: 50px;
+    }
+    .nav a {
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .nav a:hover{
+      background-color: gold;
+      padding: 10px;
+      color: white;
+    }
+    .slider {
+      width: 100%;
+      height: 60vh;
+      color: white;
+      background-image: url(dark-leather-workspace-office-gadget_67155-1926.jpg);
+      background-repeat: no-repeat;
+      background-size: 1300px 500px;
+    }
+    .slider h2 {
+      margin-top: 140px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-size: 30px;
+      color: white;
+      text-align: center;
+    }
+    .slider h1 {
+      margin-top: 10px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      font-size: 40px;
+      color: white;
+      text-align: center;
+    }
+    .slider button {
+      margin-top: 20px;
+      margin-left: 570px;
+      background-color: gold;
+      color: white;
+      border: none;
+      height: 35px;
+      width: 90px;
+      font-size: 18px;
+    }
+    .service{
+        height: auto;
+    }
+    .service h3{
+        margin-top: 30px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .service p{
+        margin-top: 5px;
+        font-size: 15px;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .service .details{
+      margin: 20px;
+      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr ;
+      gap: 7%;
+    }
+    .service .details img{
+        width: 60px;
+        height: 60px;
+        margin-top: 20px;
+        margin-left: 140px;
+    }
+    .service .details h4{
+        margin-top: 5px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+     .service .details p{
+        margin-top: 5px;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+     }
+     .body{
+      background-color: rgb(240, 240, 240);
+      
+     }
+     .body h3{
+        margin-top: 40px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     .body p{
+        margin-top: 5px;
+        font-size: 15px;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     .body .info{
+      margin: 10px 40px;
+      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+     }
+     .info .img1 ,.img2 ,.img3 , .img4 , .img5 , .img6 {
+      margin: 10px 35px;
+      width: 300px;
+      height: 230px;
+      background-color: white;
+     }
+     .body .info img{
+        width: 300px;
+        height: 150px;
+    }
+    .body .info h4{
+        margin-top: 15px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .body .info h5{
+        margin-top: 5px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .body .team{
+      margin: 20px;
+      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr ;
+      gap: 7%;
+    }
+    .body .team img{
+        width: 180px;
+        height: 180px;
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+    .body .team h4{
+        margin-top: 5px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .body .team h5{
+        margin-top: 5px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .footer{
+      background-color: white;
+      height: 40px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="Menu">
+        <div class="name">End Originator</div>
+        <div class="nav">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contacts</a>
+        </div>
+      </div>
+      <div class="slider">
+        <h2>Welcome To Our Studio !</h2>
+        <h1>It's Nice To Meet You</h1>
+        <button>Subscribe</button>
+      </div>
+      <div class="service">
+        <h3>Services</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="details">
+          <div class="item1">
+            <img src="90450638-client-member-icon-isolated-on-yellow-round-button-abstract-illustration.jpg" alt="">
+            <h4>For Students</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+              odio voluptatem fuga, iure officia aperiam optio beatae.
+              Exercitationem, sequi fuga neque placeat officia pariatur saepe.
+            </p>
+          </div>
+          <div class="item2">
+            <img src="90450638-client-member-icon-isolated-on-yellow-round-button-abstract-illustration.jpg" alt="">
+            <h4>Services</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+              odio voluptatem fuga, iure officia aperiam optio beatae.
+              Exercitationem, sequi fuga neque placeat officia pariatur saepe.
+            </p>
+          </div>
+          <div class="item3">
+            <img src="90450638-client-member-icon-isolated-on-yellow-round-button-abstract-illustration.jpg" alt="">
+            <h4>Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+              odio voluptatem fuga, iure officia aperiam optio beatae.
+              Exercitationem, sequi fuga neque placeat officia pariatur saepe.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="body">
+           <h3>PORTFOLIO</h3>
+           <p>Lorem ipsum dolor sit amet.</p>
+           <div class="info">
+           <div class="img1">
+            <img src="pexels-photo-996329.jpeg" alt="">
+            <h4>Threads</h4>
+            <h5>luxarytime</h5>
+           </div>
+           <div class="img2">
+            <img src="marquam-nature-park.jpg">
+            <h4>Explore</h4>
+            <h5>Traveller</h5>
+           </div>
+           <div class="img3">
+            <img src="download.jpeg" alt="">
+            <h4>Finish</h4>
+            <h5>Identify</h5>
+           </div>
+           <div class="img4">
+            <img src="download (2).jpeg" alt="">
+            <h4>Camera</h4>
+            <h5>Trending</h5>
+           </div>
+           <div class="img5">
+            <img src="3d-rendered-laptop-with-website-on-screen-powerpoint-background_27b7d6ca68__960_540.jpg" alt="">
+            <h4>Design</h4>
+            <h5>Website</h5>
+           </div>
+           <div class="img6">
+            <img src="photo-1606819717115-9159c900370b.jpeg" alt="">
+            <h4>Gallery</h4>
+            <h5>Photography</h5>
+           </div>
+          </div>
+          <h3>Our Amazing Team</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="team">
+            <div class="photo1">
+              <img src="Picture1 (2).png" alt="">
+              <h4>Shah Rukh Khan</h4>
+              <h5>Actor</h5>
+            </div>
+            <div class="photo1">
+              <img src="Picture2 (2).png" alt="">
+              <h4>Rohit shetty</h4>
+              <h5>Director</h5>
+            </div>
+            <div class="photo1">
+              <img src="Picture3.png" alt="">
+              <h4>Arjit Sing</h4>
+              <h5>Singer</h5>
+            </div>
+          </div>
+      </div>
+      <div class="footer">
+        Copyright &copy; 2024 Design By Amruta Kalekar
+      </div>
+    </div>
+  </body>
+</html>
